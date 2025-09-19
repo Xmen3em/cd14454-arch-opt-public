@@ -326,7 +326,7 @@ def count_parameters_by_type(model: nn.Module) -> Dict[str, int]:
 
 
 def train_baseline_model(model: ResNetBaseline, train_loader, val_loader, device: str, 
-                        config: Dict[str, Any], save_path: str = '../results/best_baseline_model.pth') -> Tuple[ResNetBaseline, Dict[str, list]]:
+                        config: Dict[str, Any], save_path: str = './results/best_baseline_model.pth') -> Tuple[ResNetBaseline, Dict[str, list]]:
     """
     Train the baseline model with clinical-focused monitoring and optimization.
     
